@@ -1,4 +1,4 @@
-package com.ijse.shopcart.service.Impl;
+package com.ijse.shopcart.service.impl;
 
 public class ItemCategoryServiceImpl {
 }
