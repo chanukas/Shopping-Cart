@@ -5,13 +5,33 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>AdminController</servlet-name>
-        <servlet-class>com.ijse.shopcart.controller.AdminController</servlet-class>
+        <servlet-name>ItemCategoryController</servlet-name>
+        <servlet-class>com.ijse.shopcart.controller.ItemCategoryController</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>AdminController</servlet-name>
-        <url-pattern>/AdminController</url-pattern>
+        <servlet-name>ItemCategoryController</servlet-name>
+        <url-pattern>/ItemCategoryController</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemController</servlet-name>
+        <servlet-class>com.ijse.shopcart.controller.ItemController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemController</servlet-name>
+        <url-pattern>/ItemController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CustomerController</servlet-name>
+        <servlet-class>com.ijse.shopcart.controller.CustomerController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerController</servlet-name>
+        <url-pattern>/CustomerController</url-pattern>
+    </servlet-mapping>
+
+
 
 
 </web-app>

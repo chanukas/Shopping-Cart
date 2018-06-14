@@ -87,7 +87,7 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal" id="frmItem">
+                <form class="form-horizontal" id="frmItem" action="ItemController">
                     <div class="box-body">
 
                         <div class="form-group">
@@ -98,10 +98,12 @@
                             </div>
                         </div>
 
+                        <input type="text" name="iAction" value="deleteItem" hidden>
+
                     </div>
                     <!-- /.box-body -->
                     <div class="box-footer">
-                        <button type="button" class="btn btn-danger pull-right" id="btnDeleteItem">Delete Item</button>
+                        <button type="submit" class="btn btn-danger pull-right" id="btnDeleteItem">Delete Item</button>
                     </div>
                     <!-- /.box-footer -->
                 </form>

@@ -89,7 +89,7 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal" id="frmCustomer">
+                <form class="form-horizontal" action="ItemCategoryController">
                     <div class="box-body">
 
                         <div class="form-group">
@@ -100,11 +100,10 @@
                             </div>
                         </div>
 
-
                     </div>
                     <!-- /.box-body -->
                     <div class="box-footer">
-                        <button type="button" class="btn btn-info pull-right" id="btnAddItemCategory">Add Item Category</button>
+                        <button type="submit" class="btn btn-info pull-right" id="btnAddItemCategory">Add Item Category</button>
                     </div>
                     <!-- /.box-footer -->
                 </form>

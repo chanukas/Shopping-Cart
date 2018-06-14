@@ -25,8 +25,13 @@
   <!--<link rel="stylesheet" href="../../plugins/iCheck/square/blue.css">-->
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+
+
 </head>
 <body class="hold-transition login-page">
+
+<div id="particles-js"></div>
 <div class="login-box">
   <div class="login-logo">
     <a href="#"><b>Shopping </b>CART</a>
@@ -61,6 +66,8 @@
         </div>
       </form>
 
+
+
     </div>
     <!-- /.login-card-body -->
   </div>
@@ -69,6 +76,7 @@
 
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
+<script src="js/particles.js"></script>
 <!-- Bootstrap 4 -->
 
 <script>

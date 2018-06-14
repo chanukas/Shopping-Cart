@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.util.List" %>
+<%@ page import="com.ijse.shopcart.dto.CustomerDTO" %><%--
   Created by IntelliJ IDEA.
   User: Chanuka Sandaruwan
   Date: 2018-06-10
@@ -20,27 +21,28 @@
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="css/datatables.net-bs/css/dataTables.bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="css/_all-skins.min.css">
 
-    <link rel="stylesheet" href="css/sweetalert.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <![endif]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
 
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
-    <script src="js/js/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <script>
         $(function addHederAndSidebar () {
             $("#header").load('header.jsp');
@@ -94,99 +96,42 @@
                                 <table id="tblItems" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
-                                        <th>Item ID</th>
-                                        <th>Item Name</th>
-                                        <th>Item Address</th>
-                                        <th>Item Salary</th>
+                                        <th>Customer ID</th>
+                                        <th>Customer Name</th>
+                                        <th>Customer Mobile</th>
+                                        <th>Customer UserName</th>
+                                        <th>Customer Password</th>
 
                                     </tr>
                                     </thead>
 
-
                                     <tbody>
 
+                                    <%
+                                        if(request.getAttribute("customerDTOS")==null) {
+                                            request.setAttribute("cAction", "ViewAllCustomer");
+                                            request.getRequestDispatcher("CustomerController").forward(request, response);
+                                        }else{
+                                            List<CustomerDTO> customerDTOS= (List<CustomerDTO>) request.getAttribute("customerDTOS");
+                                            for (CustomerDTO customer:customerDTOS) {
+
+                                    %>
+
                                     <tr>
-                                        <td>KHTML</td>
-                                        <td>Konqureror 3.1</td>
-                                        <td>KDE 3.1</td>
-                                        <td>3.1</td>
-                                        <td>C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KHTML</td>
-                                        <td>Konqureror 3.3</td>
-                                        <td>KDE 3.3</td>
-                                        <td>3.3</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KHTML</td>
-                                        <td>Konqureror 3.5</td>
-                                        <td>KDE 3.5</td>
-                                        <td>3.5</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tasman</td>
-                                        <td>Internet Explorer 4.5</td>
-                                        <td>Mac OS 8-9</td>
-                                        <td>-</td>
-                                        <td>X</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tasman</td>
-                                        <td>Internet Explorer 5.1</td>
-                                        <td>Mac OS 7.6-9</td>
-                                        <td>1</td>
-                                        <td>C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tasman</td>
-                                        <td>Internet Explorer 5.2</td>
-                                        <td>Mac OS 8-X</td>
-                                        <td>1</td>
-                                        <td>C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>NetFront 3.1</td>
-                                        <td>Embedded devices</td>
-                                        <td>-</td>
-                                        <td>C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>NetFront 3.4</td>
-                                        <td>Embedded devices</td>
-                                        <td>-</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>Dillo 0.8</td>
-                                        <td>Embedded devices</td>
-                                        <td>-</td>
-                                        <td>X</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>Links</td>
-                                        <td>Text only</td>
-                                        <td>-</td>
-                                        <td>X</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>Lynx</td>
-                                        <td>Text only</td>
-                                        <td>-</td>
-                                        <td>X</td>
+                                        <td><%=customer.getId()%></td>
+                                        <td><%=customer.getName()%></td>
+                                        <td><%=customer.getMobile()%></td>
+                                        <td><%=customer.getUsername()%></td>
+                                        <td><%=customer.getPassword()%></td>
                                     </tr>
 
+                                    <%
+                                            }
+
+                                        }
+                                    %>
 
                                     </tbody>
-
-
                                 </table>
                             </div>
                         </form>
@@ -216,17 +161,34 @@
 
 <!-- jQuery 3 -->
 <script src="js/jquery.min.js"></script>
-
-<script src="js/main-controller.js" ></script>
-<script src="js/sweetalert.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="js/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="css/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="js/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="js/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="js/demo.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $('#tblItems').DataTable()
+        $('#example2').DataTable({
+            'paging'      : true,
+            'lengthChange': false,
+            'searching'   : false,
+            'ordering'    : true,
+            'info'        : true,
+            'autoWidth'   : false
+        })
+    })
+</script>
+
 
 </body>
 </html>

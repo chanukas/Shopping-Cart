@@ -7,6 +7,18 @@ import java.sql.SQLException;
 
 public class ResourceConnectionFactory {
 
+    private static ResourceConnectionFactory resourceConnectionFactory;
+
+    private ResourceConnectionFactory() {
+    }
+
+    public static ResourceConnectionFactory getInstance(){
+        if(resourceConnectionFactory==null){
+            resourceConnectionFactory=new ResourceConnectionFactory();
+        }
+        return resourceConnectionFactory;
+    }
+
     public Connection getResourceConnection()throws ClassNotFoundException,SQLException{
         try {
             return ResourceConnectionImpl.getInstance().getConnection();

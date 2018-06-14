@@ -28,5 +28,44 @@ public class CustomerModel {
 
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getId() {
+
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }

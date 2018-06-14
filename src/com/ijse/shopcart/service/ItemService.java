@@ -1,4 +1,16 @@
 package com.ijse.shopcart.service;
 
-public class ItemService {
+import com.ijse.shopcart.dto.ItemDTO;
+
+import java.util.List;
+
+public interface ItemService extends SuperService {
+
+    public boolean saveItem(ItemDTO itemDTO);
+    public boolean removeItem(int id);
+    public boolean editItem(ItemDTO itemDTO);
+    public List<ItemDTO> viewAllItem();
+
+    public List<ItemDTO> getSelectedItem(String Id);
+
 }

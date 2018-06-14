@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Chanuka Sandaruwan
   Date: 2018-06-10
@@ -87,7 +87,7 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal" id="frmItem">
+                <form class="form-horizontal" id="frmItem" action="ItemController">
                     <div class="box-body">
 
 
@@ -119,20 +119,34 @@
                             <label for="SelectItemCategory" class="col-sm-2 control-label">Select Item Category</label>
 
                             <div class="col-sm-10">
-                                <input list="Items" class="form-control" id="SelectItemCategory" name="SelectItemCategory" placeholder="Any">
+                                <input list="itemCategoris" class="form-control" id="SelectItemCategory" name="SelectItemCategory" placeholder="Any">
                             </div>
-                            <datalist id="items">
+                            <datalist id="itemCategoris">
                                 <%
-
+                                    if(request.getAttribute("itemCategories")==null) {
+                                        request.setAttribute("iAction", "ViewAllItemCategory");
+                                        request.getRequestDispatcher("ItemCategoryController").forward(request, response);
+                                    }else{
+                                        List<String> stringList= (List<String>) request.getAttribute("itemCategories");
+                                        for (String itemcategory:stringList) {
 
                                 %>
+                                <option value="<%=itemcategory%>"></option>
+
+                                <%
+                                        }
+                                    }
+                                %>
+
                             </datalist>
                         </div>
 
                     </div>
+
+                    <input type="text" name="iAction" value="addItem" hidden>
                     <!-- /.box-body -->
                     <div class="box-footer">
-                        <button type="button" class="btn btn-info pull-right" id="btnAddCustomer">Add Item</button>
+                        <button type="submit" class="btn btn-info pull-right" id="btnAddCustomer">Add Item</button>
                     </div>
                     <!-- /.box-footer -->
                 </form>

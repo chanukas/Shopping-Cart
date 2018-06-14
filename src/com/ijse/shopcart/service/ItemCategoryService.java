@@ -1,4 +1,10 @@
 package com.ijse.shopcart.service;
 
-public interface ItemCategoryService {
+import java.util.List;
+
+public interface ItemCategoryService extends SuperService {
+
+    public boolean saveItemCategory(String ItemCategory);
+    public List<String> viewAllItemCategory();
+
 }

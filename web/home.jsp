@@ -41,12 +41,12 @@
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <script src="js/js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
         $(function addHederAndSidebar () {
             $("#header").load('header.jsp');
             $("#leftbar").load('sidebar.jsp');
-            console.log("sidebar");
         });
 
     </script>

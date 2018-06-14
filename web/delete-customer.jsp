@@ -88,7 +88,7 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal" id="frmCustomer">
+                <form class="form-horizontal" action="CustomerController">
                     <div class="box-body">
 
                         <div class="form-group">
@@ -98,10 +98,12 @@
                                 <input class="form-control" id="customerID" name="customerID" placeholder="ID">
                             </div>
                         </div>
+                        <input type="text" name="cAction" value="DeleteCustomer" hidden>
 
                     <!-- /.box-body -->
                     <div class="box-footer">
-                        <button type="button" class="btn btn-danger pull-right" id="btnAddCustomer">Delete Customer</button>
+                        <button type="submit" class="btn btn-danger pull-right" id="btnAddCustomer">Delete Customer</button>
+                        </div>
                     </div>
                     <!-- /.box-footer -->
                 </form>

@@ -28,7 +28,7 @@
         <li><a href="add-itemcategory.jsp"><i class="fa fa-book"></i> <span>Add Item Category</span></a></li>
 
         <li class="treeview">
-            <a href="#">
+            <a href="home.jsp">
                 <i class="fa fa-cart-arrow-down"></i>
                 <span>Manage Items</span>
                 <span class="pull-right-container">
@@ -37,14 +37,14 @@
             </a>
             <ul class="treeview-menu">
                 <li><a href="add-item.jsp"><i class="fa fa-book"></i>Add Item</a></li>
-                <li><a href="edit-Item.jsp"><i class="fa fa-edit"></i>Edit Item</a></li>
+                <li><a href="edit-item.jsp"><i class="fa fa-edit"></i>Edit Item</a></li>
                 <li><a href="delete-item.jsp"><i class="fa fa-recycle"></i>Delete Item</a></li>
                 <li><a href="view-all-item.jsp"><i class="fa fa-table"></i>View All Item</a></li>
             </ul>
         </li>
 
         <li class="treeview">
-            <a href="#">
+            <a href="home.jsp">
                 <i class="fa fa-user"></i>
                 <span>Manage Customers</span>
                 <span class="pull-right-container">

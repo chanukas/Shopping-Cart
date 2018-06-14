@@ -5882,7 +5882,7 @@ module.exports = {
 		},
 
 		/**
-		 * Point mode returns all elements that hit test based on the event position
+		 * Point mode returns all elements that hit CC based on the event position
 		 * of the event
 		 * @function Chart.Interaction.modes.intersect
 		 * @param chart {chart} the chart we are returning items from
@@ -5929,7 +5929,7 @@ module.exports = {
 		},
 
 		/**
-		 * x mode returns the elements that hit-test at the current x coordinate
+		 * x mode returns the elements that hit-CC at the current x coordinate
 		 * @function Chart.Interaction.modes.x
 		 * @param chart {chart} the chart we are returning items from
 		 * @param e {Event} the event we are find things at
@@ -5960,7 +5960,7 @@ module.exports = {
 		},
 
 		/**
-		 * y mode returns the elements that hit-test at the current y coordinate
+		 * y mode returns the elements that hit-CC at the current y coordinate
 		 * @function Chart.Interaction.modes.y
 		 * @param chart {chart} the chart we are returning items from
 		 * @param e {Event} the event we are find things at
@@ -9780,7 +9780,7 @@ var helpers = {
 
 	/**
 	 * Returns true if `value` is neither null nor undefined, else returns false.
-	 * @param {*} value - The value to test.
+	 * @param {*} value - The value to CC.
 	 * @returns {Boolean}
 	 * @since 2.7.0
 	 */
@@ -9790,7 +9790,7 @@ var helpers = {
 
 	/**
 	 * Returns true if `value` is an array, else returns false.
-	 * @param {*} value - The value to test.
+	 * @param {*} value - The value to CC.
 	 * @returns {Boolean}
 	 * @function
 	 */
@@ -9800,7 +9800,7 @@ var helpers = {
 
 	/**
 	 * Returns true if `value` is an object (excluding null), else returns false.
-	 * @param {*} value - The value to test.
+	 * @param {*} value - The value to CC.
 	 * @returns {Boolean}
 	 * @since 2.7.0
 	 */

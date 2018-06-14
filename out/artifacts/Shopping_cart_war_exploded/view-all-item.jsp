@@ -1,4 +1,5 @@
-<%--
+<%@ page import="com.ijse.shopcart.dto.ItemDTO" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Chanuka Sandaruwan
   Date: 2018-06-10
@@ -25,6 +26,8 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="css/_all-skins.min.css">
+
+    <link rel="stylesheet" href="css/datatables.net-bs/css/dataTables.bootstrap.min.css">
 
     <link rel="stylesheet" href="css/sweetalert.css">
 
@@ -95,9 +98,10 @@
                                     <thead>
                                     <tr>
                                         <th>Item ID</th>
-                                        <th>Item Name</th>
-                                        <th>Item Address</th>
-                                        <th>Item Salary</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                        <th>Item QTY ON Hand</th>
+                                        <th>Item Category</th>
 
                                     </tr>
                                     </thead>
@@ -105,83 +109,31 @@
 
                                     <tbody>
 
+                                    <%
+
+                                    if(request.getAttribute("ItemDTOs")==null){
+                                        request.setAttribute("iAction","ViewAllItem");
+                                        request.getRequestDispatcher("ItemController").forward(request,response);
+                                    }else{
+                                       List<ItemDTO> itemDTOList= (List<ItemDTO>) request.getAttribute("ItemDTOs");
+                                        for (ItemDTO item:itemDTOList) {
+
+
+                                    %>
+
                                     <tr>
-                                        <td>KHTML</td>
-                                        <td>Konqureror 3.1</td>
-                                        <td>KDE 3.1</td>
-                                        <td>3.1</td>
-                                        <td>C</td>
+                                        <td><%=item.getId()%></td>
+                                        <td><%=item.getDescription()%></td>
+                                        <td><%=item.getPrice()%></td>
+                                        <td><%=item.getQtyonhand()%></td>
+                                        <td><%=item.getItemcategory()%></td>
                                     </tr>
-                                    <tr>
-                                        <td>KHTML</td>
-                                        <td>Konqureror 3.3</td>
-                                        <td>KDE 3.3</td>
-                                        <td>3.3</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KHTML</td>
-                                        <td>Konqureror 3.5</td>
-                                        <td>KDE 3.5</td>
-                                        <td>3.5</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tasman</td>
-                                        <td>Internet Explorer 4.5</td>
-                                        <td>Mac OS 8-9</td>
-                                        <td>-</td>
-                                        <td>X</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tasman</td>
-                                        <td>Internet Explorer 5.1</td>
-                                        <td>Mac OS 7.6-9</td>
-                                        <td>1</td>
-                                        <td>C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tasman</td>
-                                        <td>Internet Explorer 5.2</td>
-                                        <td>Mac OS 8-X</td>
-                                        <td>1</td>
-                                        <td>C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>NetFront 3.1</td>
-                                        <td>Embedded devices</td>
-                                        <td>-</td>
-                                        <td>C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>NetFront 3.4</td>
-                                        <td>Embedded devices</td>
-                                        <td>-</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>Dillo 0.8</td>
-                                        <td>Embedded devices</td>
-                                        <td>-</td>
-                                        <td>X</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>Links</td>
-                                        <td>Text only</td>
-                                        <td>-</td>
-                                        <td>X</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Misc</td>
-                                        <td>Lynx</td>
-                                        <td>Text only</td>
-                                        <td>-</td>
-                                        <td>X</td>
-                                    </tr>
+
+                                    <%
+                                            }
+                                        }
+
+                                    %>
 
 
                                     </tbody>
@@ -216,17 +168,34 @@
 
 <!-- jQuery 3 -->
 <script src="js/jquery.min.js"></script>
-
-<script src="js/main-controller.js" ></script>
-<script src="js/sweetalert.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="js/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="css/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="js/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="js/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="js/demo.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $('#tblItems').DataTable()
+        $('#example2').DataTable({
+            'paging'      : true,
+            'lengthChange': false,
+            'searching'   : false,
+            'ordering'    : true,
+            'info'        : true,
+            'autoWidth'   : false
+        })
+    })
+</script>
+
 
 </body>
 </html>

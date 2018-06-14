@@ -69,12 +69,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Add Customer
-                <small>Fill The Following Form To Add New Customer.</small>
+                Edit Customer
+                <small>Fill The Following Form To Edit Customer.</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="#">Add Customer</a></li>
+                <li><a href="#">Edit Customer</a></li>
             </ol>
         </section>
 
@@ -84,11 +84,11 @@
             <!-- Horizontal Form -->
             <div class="box box-info">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Add Customer Form</h3>
+                    <h3 class="box-title">Edit Customer Form</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal" id="frmCustomer">
+                <form class="form-horizontal" action="CustomerController">
                     <div class="box-body">
 
                         <div class="form-group">
@@ -131,10 +131,12 @@
                             </div>
                         </div>
 
+                        <input type="text" name="cAction" value="EditCustomer" hidden>
+
                     </div>
                     <!-- /.box-body -->
                     <div class="box-footer">
-                        <button type="button" class="btn btn-google pull-right" id="btnAddCustomer">Edit Customer</button>
+                        <button type="submit" class="btn btn-google pull-right" id="btnAddCustomer">Edit Customer</button>
                     </div>
                     <!-- /.box-footer -->
                 </form>
