@@ -43,6 +43,12 @@ public class ItemCategoryController extends HttpServlet {
                 req.setAttribute("itemCategories", itemCategorys);
                 req.getRequestDispatcher("shop-cart.jsp").forward(req, resp);
             }
+
+            if (req.getAttribute("iAction").equals("ViewAllItemCategoryForShpCart")) {
+                List<String> itemCategorys = itemCategoryService.viewAllItemCategory();
+                req.setAttribute("itemCategories", itemCategorys);
+                req.getRequestDispatcher("shopping-cart.jsp").forward(req, resp);
+            }
         }
 
 

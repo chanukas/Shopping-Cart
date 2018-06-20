@@ -2,6 +2,7 @@ package com.ijse.shopcart.service;
 
 import com.ijse.shopcart.dto.ItemDTO;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface ItemService extends SuperService {
@@ -12,5 +13,6 @@ public interface ItemService extends SuperService {
     public List<ItemDTO> viewAllItem();
 
     public List<ItemDTO> getSelectedItem(String Id);
+    public int  getLastID()throws SQLException;
 
 }

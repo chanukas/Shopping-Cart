@@ -67,7 +67,7 @@ public class ItemDAOImpl implements ItemDAO {
         List<ItemModel> itemModels=new ArrayList<>();
         ResultSet resultSet = null;
         try {
-            resultSet = connection.createStatement().executeQuery("SELECT * FROM item WHERE item_category");
+            resultSet = connection.createStatement().executeQuery("SELECT * FROM item WHERE ITEM_CATEGORY_ID="+id+"");
             while (resultSet.next()){
                 itemModels.add(new ItemModel(resultSet.getInt(1),resultSet.getString(2),resultSet.getDouble(3),resultSet.getInt(4),resultSet.getInt(5)));
             }
@@ -75,5 +75,21 @@ public class ItemDAOImpl implements ItemDAO {
             throw e;
         }
         return itemModels;
+    }
+
+    @Override
+    public int getLastID()throws SQLException {
+        int id=0;
+        ResultSet resultSet = null;
+        try {
+            resultSet = connection.createStatement().executeQuery("SELECT ID FROM item ORDER BY id DESC limit 1");
+            while (resultSet.next()){
+                id=resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            throw e;
+        }
+        return id;
+
     }
 }

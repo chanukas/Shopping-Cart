@@ -47,7 +47,6 @@
             $("#leftbar").load('sidebar.jsp');
             console.log("sidebar");
         });
-
     </script>
 
     <!-- Google Font -->
@@ -129,7 +128,6 @@
                                     }else{
                                         List<String> stringList= (List<String>) request.getAttribute("itemCategories");
                                         for (String itemcategory:stringList) {
-
                                 %>
                                 <option value="<%=itemcategory%>"></option>
 
@@ -173,7 +171,7 @@
 <!-- jQuery 3 -->
 <script src="js/jquery.min.js"></script>
 
-<script src="js/main-controller.js" ></script>
+<script src="js/controller.js" ></script>
 <script src="js/sweetalert.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="js/bootstrap.min.js"></script>
@@ -186,5 +184,3 @@
 
 </body>
 </html>
-
-

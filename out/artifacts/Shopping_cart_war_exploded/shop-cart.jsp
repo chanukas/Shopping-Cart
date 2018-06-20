@@ -58,10 +58,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="font-family: 'Poppins', sans-serif;">
+                <a class="nav-link dropdown-toggle" href="ItemController" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="font-family: 'Poppins', sans-serif;">
                     Item Category
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+
 
                     <%
                         if(request.getAttribute("itemCategories")==null) {
@@ -72,12 +73,14 @@
                             for (String itemcategory:stringList) {
 
                     %>
-                    <a class="dropdown-item" href="shop-cart.jsp"><%=itemcategory%></a>
+                    <a href="ItemController" ><%=itemcategory%></a>
 
                     <%
                             }
                         }
+
                     %>
+
 
                 </div>
             </li>
@@ -131,10 +134,6 @@
         </div>
     </section>
 
-
-
-
-
     <%
 
         if(request.getAttribute("ItemDTOs")==null) {
@@ -150,7 +149,7 @@
         <div class='panel panel-info'>
             <div class='panel-heading' id='productTitle' ><%=item.getDescription()%></div>
             <div class='panel-body'>
-                <img src='images/user.jpg' style='width:250px; height:250px;'/>
+                <%--<img src='images/user.jpg' style='width:250px; height:250px;'/>--%>
             </div>
             <div class='panel-heading'>LKR<%=item.getPrice()%>
                 <button pid='$pro_id' pTitle='$pro_title' pImage='$pro_image' pPrice='$pro_price' style='float:right;' id='btnAddToCart' class='btn btn-danger btn-xs'>AddToCart</button>
@@ -164,10 +163,6 @@
 
 
     %>
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

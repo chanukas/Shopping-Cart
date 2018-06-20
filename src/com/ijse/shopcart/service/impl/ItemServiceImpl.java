@@ -90,4 +90,15 @@ public class ItemServiceImpl implements ItemService {
         }
         return itemDTOS;
     }
+
+    @Override
+    public int getLastID() {
+        int id=0;
+        try {
+            id=itemDAO.getLastID();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return id;
+    }
 }

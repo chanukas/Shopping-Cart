@@ -6,16 +6,23 @@ import com.ijse.shopcart.dto.ItemDTO;
 import com.ijse.shopcart.service.ServiceFactory;
 import com.ijse.shopcart.service.impl.ItemCategoryServiceImpl;
 import com.ijse.shopcart.service.impl.ItemServiceImpl;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Iterator;
 import java.util.List;
 
 public class ItemController extends HttpServlet {
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -70,12 +77,22 @@ public class ItemController extends HttpServlet {
 
             if(req.getAttribute("iAction").equals("ViewFromShopCart")){
                 req.setAttribute("ItemDTOs",itemService.viewAllItem());
-                req.getRequestDispatcher("shop-cart.jsp").forward(req,resp);
+                req.getRequestDispatcher("shopping-cart.jsp").forward(req,resp);
             }
 
-
+            if(req.getAttribute("iAction").equals("LastIDFromCart")){
+                req.setAttribute("lastID",itemService.getLastID());
+                req.getRequestDispatcher("cart.jsp").forward(req,resp);
+            }
         }
+
+        if(req.getParameter("ItemCategory")!=null){
+            req.setAttribute("ItemDTOs",itemService.getSelectedItem(req.getParameter("ItemCategory")));
+            req.getRequestDispatcher("shopping-cart.jsp").forward(req,resp);
+        }
+
     }
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -1,0 +1,4 @@
+$("#cartIcon").click(function () {
+
+});
+
