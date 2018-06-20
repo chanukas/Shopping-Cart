@@ -96,7 +96,7 @@
                             <label for="customerID" class="col-sm-2 control-label">ID</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="customerID" name="customerID" placeholder="ID">
+                                <input class="form-control" required id="customerID" name="customerID" placeholder="ID">
                             </div>
                         </div>
                         <input type="text" name="cAction" value="DeleteCustomer" hidden>

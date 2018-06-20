@@ -99,7 +99,7 @@
                             <label for="itemID" class="col-sm-2 control-label">Id</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="itemID" name="itemID" placeholder="Item Id">
+                                <input class="form-control" required id="itemID" name="itemID" placeholder="Item Id">
                             </div>
                         </div>
 
@@ -107,7 +107,7 @@
                             <label for="itemDescription" class="col-sm-2 control-label">Description</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="itemDescription" name="itemDescription" placeholder="Description">
+                                <input class="form-control" required id="itemDescription" name="itemDescription" placeholder="Description">
                             </div>
                         </div>
 
@@ -115,7 +115,7 @@
                             <label for="itemUnitPrice" class="col-sm-2 control-label">UnitPrice</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" name="itemUnitPrice"   id="itemUnitPrice" placeholder="Salary">
+                                <input class="form-control" type="number" required name="itemUnitPrice"   id="itemUnitPrice" placeholder="Salary">
                             </div>
                         </div>
 
@@ -123,7 +123,7 @@
                             <label for="itemQTY" class="col-sm-2 control-label">QTY On Hand</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" name="itemQTY"   id="itemQTY" placeholder="QTY">
+                                <input class="form-control" type="number" required name="itemQTY"   id="itemQTY" placeholder="QTY">
                             </div>
                         </div>
 
@@ -131,7 +131,7 @@
                             <label for="SelectItemCategory" class="col-sm-2 control-label">Select Item Category</label>
 
                             <div class="col-sm-10">
-                                <input list="Items" class="form-control" id="SelectItemCategory" name="SelectItemCategory" placeholder="Any">
+                                <input list="Items" class="form-control" required id="SelectItemCategory" name="SelectItemCategory" placeholder="Any">
                             </div>
                             <datalist id="Items">
 

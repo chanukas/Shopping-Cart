@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="css/adminlte.css">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <!-- iCheck -->
   <!--<link rel="stylesheet" href="../../plugins/iCheck/square/blue.css">-->
   <!-- Google Font: Source Sans Pro -->
@@ -33,7 +34,7 @@
 <div id="particles-js"></div>
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>Shopping </b>CART</a>
+    <a readonly><b>Shopping </b>CART</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
@@ -42,20 +43,20 @@
 
       <form action="index.jsp" method="post">
         <div class="form-group has-feedback">
-          <input type="text"  name="userName" class="form-control" placeholder="User Name">
+          <input type="text" required name="userName" class="form-control" placeholder="User Name">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
-          <input type="password" name="password" class="form-control" placeholder="Password">
+          <input type="password" required name="password" class="form-control" placeholder="Password">
           <span class="fa fa-lock form-control-feedback"></span>
         </div>
         <div class="row">
           <div class="col-8">
-            <button href="" class="btn btn-success">Customer Login</button>
+            <a href="customer-login.jsp" class="btn btn-success" role="button" aria-pressed="true">Customer Login</a>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            <button type="submit" class="btn btn-primary ">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
@@ -75,8 +76,6 @@
         }
       %>
 
-
-
     </div>
     <!-- /.login-card-body -->
   </div>
@@ -95,7 +94,8 @@
             radioClass   : 'iradio_square-blue',
             increaseArea : '20%' // optional
         })
-    })
+    });
+
 </script>
 </body>
 </html>

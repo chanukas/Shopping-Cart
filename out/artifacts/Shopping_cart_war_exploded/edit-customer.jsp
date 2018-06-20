@@ -5,6 +5,7 @@
   Time: 12:57 PM
   To change this template use File | Settings | File Templates.
 --%>
+<% if(session.getAttribute("userName")==null) response.sendRedirect("index.jsp");%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -95,7 +96,7 @@
                             <label for="customerID" class="col-sm-2 control-label">ID</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="customerID" name="customerID" placeholder="ID">
+                                <input class="form-control" required id="customerID" name="customerID" placeholder="ID">
                             </div>
                         </div>
 
@@ -103,7 +104,7 @@
                             <label for="customerName" class="col-sm-2 control-label">Name</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="customerName" name="customerName" placeholder="Name">
+                                <input class="form-control" required id="customerName" name="customerName" placeholder="Name">
                             </div>
                         </div>
 
@@ -111,7 +112,7 @@
                             <label for="customerMobile" class="col-sm-2 control-label">Mobile</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" name="customerMobile"   id="customerMobile" placeholder="Mobile">
+                                <input class="form-control"  type="number" required name="customerMobile"   id="customerMobile" placeholder="Mobile">
                             </div>
                         </div>
 
@@ -119,7 +120,7 @@
                             <label for="customerUserName" class="col-sm-2 control-label">User Name</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" name="customerUserName"   id="customerUserName" placeholder="User Name">
+                                <input class="form-control" required name="customerUserName"   id="customerUserName" placeholder="User Name">
                             </div>
                         </div>
 
@@ -127,7 +128,7 @@
                             <label for="customerPassword" class="col-sm-2 control-label">Password</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" name="customerPassword"   id="customerPassword" placeholder="Password">
+                                <input class="form-control" required name="customerPassword"   id="customerPassword" placeholder="Password">
                             </div>
                         </div>
 

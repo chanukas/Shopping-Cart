@@ -5,6 +5,7 @@
   Time: 11:50 AM
   To change this template use File | Settings | File Templates.
 --%>
+<% if(session.getAttribute("userName")==null) response.sendRedirect("index.jsp");%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -96,7 +97,7 @@
                             <label for="itemDescription" class="col-sm-2 control-label">Item Description</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="itemDescription" name="itemDescription" placeholder="Item Description">
+                                <input class="form-control" required id="itemDescription" name="itemDescription" placeholder="Item Description">
                             </div>
                         </div>
 

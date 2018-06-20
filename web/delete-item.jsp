@@ -95,7 +95,7 @@
                             <label for="itemID" class="col-sm-2 control-label">Item ID</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="itemID" name="itemID" placeholder="item ID">
+                                <input class="form-control"  required id="itemID" name="itemID" placeholder="item ID">
                             </div>
                         </div>
 

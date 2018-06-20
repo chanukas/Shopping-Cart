@@ -99,7 +99,7 @@
                             <label for="itemDescription" class="col-sm-2 control-label">Description</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="itemDescription" name="itemDescription" placeholder="Description">
+                                <input class="form-control" required id="itemDescription" name="itemDescription" placeholder="Description">
                             </div>
                         </div>
 
@@ -107,7 +107,7 @@
                             <label for="itemPrice" class="col-sm-2 control-label">Price</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" id="itemPrice" name="itemPrice" placeholder="itemPrice">
+                                <input class="form-control" type="number"  required id="itemPrice" name="itemPrice" placeholder="itemPrice">
                             </div>
                         </div>
 
@@ -115,7 +115,7 @@
                             <label for="itemQTYOnHand" class="col-sm-2 control-label">QTY On Hand</label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" name="itemQTYOnHand"   id="itemQTYOnHand" placeholder="itemQTYOnHand">
+                                <input class="form-control" type="number" required name="itemQTYOnHand"   id="itemQTYOnHand" placeholder="itemQTYOnHand">
                             </div>
                         </div>
 
@@ -123,7 +123,7 @@
                             <label for="SelectItemCategory" class="col-sm-2 control-label">Select Item Category</label>
 
                             <div class="col-sm-10">
-                                <input list="itemCategoris" class="form-control" id="SelectItemCategory" name="SelectItemCategory" placeholder="Any">
+                                <input list="itemCategoris" required class="form-control" id="SelectItemCategory" name="SelectItemCategory" placeholder="Any">
                             </div>
                             <datalist id="itemCategoris">
                                 <%
