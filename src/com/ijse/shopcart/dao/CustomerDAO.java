@@ -11,4 +11,6 @@ public interface CustomerDAO extends SuperDAO {
     public int updateCustomer(CustomerModel customerModel)throws SQLException,ClassNotFoundException;
     public int deleteCustomer(int id)throws SQLException,ClassNotFoundException;
     public List<CustomerModel> showAllCustomer()throws SQLException,ClassNotFoundException;
+
+    public boolean checkLogin(String username,String password) throws SQLException;
 }

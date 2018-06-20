@@ -77,4 +77,15 @@ public class CustomerServiceImpl implements CustomerService {
         }
         return customerDTOS;
     }
+
+    @Override
+    public boolean checkLogin(String username, String password)  {
+        boolean result=false;
+        try {
+            result=customerDAO.checkLogin(username,password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

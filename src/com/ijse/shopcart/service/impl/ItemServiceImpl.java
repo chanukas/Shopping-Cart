@@ -112,4 +112,18 @@ public class ItemServiceImpl implements ItemService {
         }
         return curQty;
     }
+
+    @Override
+    public boolean updateQtyOnHand(int id, int curQty) {
+        boolean result=false;
+        try {
+           if(0<itemDAO.updateQtyOnHand(id,curQty)){
+               result=true;
+           }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

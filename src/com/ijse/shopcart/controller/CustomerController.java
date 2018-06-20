@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -54,6 +55,18 @@ public class CustomerController extends HttpServlet {
                 out.println("<script type=\"text/javascript\">");
                 out.println("location='edit-customer.jsp';");
                 out.println("alert('Customer has been successfully updated..!');");
+                out.println("</script>");
+            }
+        }
+
+        if(cAction.equals("Login")){
+            if(customerService.checkLogin(req.getParameter("username"),req.getParameter("pass"))){
+               req.getSession().setAttribute("CustomerName",req.getParameter("username"));
+               resp.sendRedirect("shopping-cart.jsp");
+            }else{
+                out.println("<script type=\"text/javascript\">");
+                out.println("location='customer-login.jsp';");
+                out.println("alert('Invalid username or password try again..!');");
                 out.println("</script>");
             }
         }

@@ -12,6 +12,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -65,6 +66,46 @@ public class ItemController extends HttpServlet {
                 out.println("<script type=\"text/javascript\">");
                 out.println("location='edit-item.jsp';");
                 out.println("alert('Item has been successfully updated..!');");
+                out.println("</script>");
+            }
+        }
+
+        if(iAction.equals("ItemCart")){
+
+            ItemDTO  itemDTO=new ItemDTO();
+
+            int id=itemService.getLastID();
+            Cookie[] cookies = req.getCookies();
+            String otpCookie = null;
+
+            if (cookies != null) {
+                for (int i = 0; i < cookies.length; i++) {
+                    Cookie cookie = cookies[i];
+                    for (int j = 0; j < id+1; j++) {
+                        if (cookie.getName().equals(j + "")) {
+
+                            String[] split = cookie.getValue().split("-");
+
+                            int itemid=(Integer.parseInt(cookie.getName()));
+                            int curqty=(itemService.getQtyOnHand(Integer.parseInt(cookie.getName()))-Integer.parseInt(split[0]));
+                            if(itemService.updateQtyOnHand(itemid,curqty)) {
+
+                                cookie.setValue("");
+                                cookie.setPath("/");
+                                cookie.setMaxAge(0);
+                                resp.addCookie(cookie);
+                            }
+                        }
+                    }
+                }
+                out.println("<script type=\"text/javascript\">");
+                out.println("location='cart.jsp';");
+                out.println("alert('Order has been successfully Send..!');");
+                out.println("</script>");
+            }else{
+                out.println("<script type=\"text/javascript\">");
+                out.println("location='cart.jsp';");
+                out.println("alert('Somthing Wrong..!');");
                 out.println("</script>");
             }
         }

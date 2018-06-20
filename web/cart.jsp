@@ -25,7 +25,7 @@
 <body>
 
 <div class="container">
-    <form action="">
+    <form action="ItemController">
     <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr>
@@ -48,13 +48,14 @@
             }else {
                 Integer id = (Integer) request.getAttribute("lastID");
 
+
                 Cookie[] cookies = request.getCookies();
                 String otpCookie = null;
 
                 if (cookies != null) {
                     for (int i = 0; i < cookies.length; i++) {
                         Cookie cookie = cookies[i];
-                        for (int j = 0; j < 15; j++) {
+                        for (int j = 0; j <= id; j++) {
                             if (cookie.getName().equals(j + "")) {
 
                                 String[] split = cookie.getValue().split("-");
@@ -144,7 +145,7 @@
 
                             }
                         }
-                    }
+                   }
                 }
             }
         %>
@@ -159,6 +160,7 @@
         </tr>
         </tfoot>
     </table>
+        <input type="text" value="ItemCart" name="iAction" hidden>
     </form>
 </div>
 

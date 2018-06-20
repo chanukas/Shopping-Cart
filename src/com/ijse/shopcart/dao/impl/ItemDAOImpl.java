@@ -106,4 +106,13 @@ public class ItemDAOImpl implements ItemDAO {
         }
         return qtyonhand;
     }
+
+    @Override
+    public int updateQtyOnHand(int id, int curQty)throws SQLException{
+        try {
+            return connection.createStatement().executeUpdate("UPDATE item SET QTY_ON_HAND="+curQty+" WHERE ID="+id+"");
+        } catch (SQLException e) {
+            throw e;
+        }
+    }
 }

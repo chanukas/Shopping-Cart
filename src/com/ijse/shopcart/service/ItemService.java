@@ -13,7 +13,8 @@ public interface ItemService extends SuperService {
     public List<ItemDTO> viewAllItem();
 
     public List<ItemDTO> getSelectedItem(String Id);
-    public int  getLastID()throws SQLException;
-    public int getQtyOnHand(int id)throws SQLException;
+    public int  getLastID();
+    public int getQtyOnHand(int id);
+    public boolean updateQtyOnHand(int id,int curQty);
 
 }

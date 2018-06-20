@@ -7,144 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="015b8246-ae00-4136-8f4b-4dc265aa6f89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/css/customermain.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/customerutil.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/customer-login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/iconic/css/material-design-iconic-font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/iconic/css/material-design-iconic-font.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/UFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/Ubuntu-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/Ubuntu-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/Ubuntu-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/Ubuntu-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/Ubuntu-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/Ubuntu-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/Ubuntu-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/fonts/ubuntu/Ubuntu-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/bg-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/icons/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/customermain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/animate/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/animsition/css/animsition.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/animsition/css/animsition.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/animsition/js/animsition.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/animsition/js/animsition.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/countdowntime/countdowntime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/daterangepicker/moment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/daterangepicker/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/select2/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/select2/select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/vendor/select2/select2.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/add-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/add-customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/add-item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/add-item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/add-itemcategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/add-itemcategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/delete-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/delete-customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/delete-item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/delete-item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/edit-Item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/edit-Item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/edit-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/edit-customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/view-all-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/view-all-customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/view-all-item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/view-all-item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/add-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/add-customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/add-item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/add-item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/add-itemcategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/add-itemcategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/delete-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/delete-customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/delete-item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/delete-item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/edit-Item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit-Item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/edit-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit-customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/dao/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/dao/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/dao/impl/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/dao/impl/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/service/Impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/service/Impl/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/dao/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/dao/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/dao/impl/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/dao/impl/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/service/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/customer-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/customer-login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -189,92 +74,80 @@
       <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/cart.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="17" column="72" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="72" />
+            <state relative-caret-position="238">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <file leaf-file-name="ItemController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+            <state relative-caret-position="-91">
+              <caret line="81" column="58" lean-forward="true" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-customer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/add-customer.jsp">
+      <file leaf-file-name="ItemDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="164">
+              <caret line="110" column="69" selection-start-line="110" selection-start-column="69" selection-end-line="110" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-item.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/add-item.jsp">
+      <file leaf-file-name="ItemService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="117" column="72" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="72" />
+            <state relative-caret-position="238">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-itemcategory.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/add-itemcategory.jsp">
+      <file leaf-file-name="ItemServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="99" column="69" selection-start-line="99" selection-start-column="69" selection-end-line="99" selection-end-column="69" />
+            <state relative-caret-position="198">
+              <caret line="119" column="52" lean-forward="true" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete-customer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/delete-customer.jsp">
+      <file leaf-file-name="ItemDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="98" column="69" selection-start-line="98" selection-start-column="69" selection-end-line="98" selection-end-column="69" />
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete-item.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/delete-item.jsp">
+      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="97" column="70" selection-start-line="97" selection-start-column="70" selection-end-line="97" selection-end-column="70" />
+            <state relative-caret-position="952">
+              <caret line="68" column="74" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-customer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/edit-customer.jsp">
+      <file leaf-file-name="CustomerServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/CustomerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="114" column="73" selection-start-line="114" selection-start-column="73" selection-end-line="114" selection-end-column="73" />
+            <state relative-caret-position="1258">
+              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-item.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/edit-item.jsp">
+      <file leaf-file-name="CustomerDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-328">
-              <caret line="125" column="72" selection-start-line="125" selection-start-column="72" selection-end-line="125" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer-login.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/customer-login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1059">
+              <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -304,10 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/CustomerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemCategoryService.java" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemCategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemCategoryDAOImpl.java" />
         <option value="$PROJECT_DIR$/web/edit-Item.jsp" />
         <option value="$PROJECT_DIR$/web/web/update-item.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/update-customer.jsp" />
@@ -316,7 +185,6 @@
         <option value="$PROJECT_DIR$/web/update-customer.jsp" />
         <option value="$PROJECT_DIR$/web/update-item.jsp" />
         <option value="$PROJECT_DIR$/web/sidebar.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/web/css/login.scss" />
         <option value="$PROJECT_DIR$/web/js/login.js" />
         <option value="$PROJECT_DIR$/web/testL.jsp" />
@@ -335,13 +203,7 @@
         <option value="$PROJECT_DIR$/web/css/cart.css" />
         <option value="$PROJECT_DIR$/web/cart.html" />
         <option value="$PROJECT_DIR$/web/sample.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemService.java" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java" />
         <option value="$PROJECT_DIR$/web/js/controller.js" />
-        <option value="$PROJECT_DIR$/web/cart.jsp" />
         <option value="$PROJECT_DIR$/web/shopping-cart.jsp" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
         <option value="$PROJECT_DIR$/web/view-all-customer.jsp" />
@@ -354,7 +216,18 @@
         <option value="$PROJECT_DIR$/web/add-item.jsp" />
         <option value="$PROJECT_DIR$/web/edit-customer.jsp" />
         <option value="$PROJECT_DIR$/web/edit-item.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/CustomerDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/web/customer-login.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/cart.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java" />
       </list>
     </option>
   </component>
@@ -396,6 +269,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -456,18 +330,11 @@
               <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,15 +352,15 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chanuka Sandaruwan\IdeaProjects\Shopping-Cart\web\web" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Chanuka Sandaruwan\IdeaProjects\Shopping-Cart\web" />
       <recent name="C:\Users\Chanuka Sandaruwan\IdeaProjects\Shopping-Cart\web\css" />
       <recent name="C:\Users\Chanuka Sandaruwan\IdeaProjects\Shopping-Cart\web\images" />
       <recent name="C:\Users\Chanuka Sandaruwan\IdeaProjects\Shopping-Cart\web\js" />
       <recent name="C:\Users\Chanuka Sandaruwan\IdeaProjects\Shopping-Cart\src\com\ijse\shopcart\connection" />
-      <recent name="C:\Users\Chanuka Sandaruwan\IdeaProjects\Shopping-Cart\src\com\ijse\shopcart" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Chanuka Sandaruwan\IdeaProjects\Shopping-Cart\web\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -854,7 +721,8 @@
       <workItem from="1529305173220" duration="17972000" />
       <workItem from="1529379501477" duration="8414000" />
       <workItem from="1529394590021" duration="11375000" />
-      <workItem from="1529465022134" duration="20903000" />
+      <workItem from="1529465022134" duration="25780000" />
+      <workItem from="1529502219678" duration="6267000" />
     </task>
     <task id="LOCAL-00001" summary="add update">
       <created>1528985002481</created>
@@ -877,11 +745,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529484744154</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add customer login">
+      <created>1529488845115</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529488845115</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126354000" />
+    <option name="totallyTimeSpent" value="137498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -905,12 +780,11 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27062705" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21122113" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22112212" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1762481" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1785174" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -919,6 +793,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -931,33 +806,10 @@
     <MESSAGE value="add update" />
     <MESSAGE value="add cart" />
     <MESSAGE value="add session" />
-    <option name="LAST_COMMIT_MESSAGE" value="add session" />
+    <MESSAGE value="add customer login" />
+    <option name="LAST_COMMIT_MESSAGE" value="add customer login" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemCategoryDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6dfdb087-895f-40b5-8210-b5d9294c977f/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view-all-item.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/edit-item.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -980,13 +832,6 @@
     <entry file="file://$PROJECT_DIR$/web/js/login.js" />
     <entry file="file://$PROJECT_DIR$/web/css/login.scss" />
     <entry file="file://$PROJECT_DIR$/web/testL.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/model/ItemModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -1001,23 +846,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.html" />
     <entry file="file://$PROJECT_DIR$/web/css/style5.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3026">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sidebar.html" />
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemCategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -1033,13 +866,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="90" column="7" selection-end-line="90" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cart.html" />
     <entry file="file://$PROJECT_DIR$/web/js/cart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
@@ -1047,13 +874,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/shop-cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="147" column="26" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/shop-cart.jsp" />
     <entry file="das://6dfdb087-895f-40b5-8210-b5d9294c977f/schema/shopping_cart/table/item">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1065,41 +886,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1124,13 +910,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/test2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test2.jsp" />
     <entry file="file://$PROJECT_DIR$/web/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-96" />
@@ -1150,31 +930,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/add-itemcategory.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="99" column="69" selection-start-line="99" selection-start-column="69" selection-end-line="99" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/add-item.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="117" column="72" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -1211,18 +970,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/add-customer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="952">
+          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add-item.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="131" column="59" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/CustomerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="83" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/customer-login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="901">
+          <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="68" column="74" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1059">
+          <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="110" column="69" selection-start-line="110" selection-start-column="69" selection-end-line="110" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="119" column="52" lean-forward="true" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="81" column="58" lean-forward="true" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
         </state>
       </provider>
     </entry>
