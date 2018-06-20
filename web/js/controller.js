@@ -1,4 +1,2 @@
-$("#cartIcon").click(function () {
-
-});
+console.log("awa");
 

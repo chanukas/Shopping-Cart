@@ -14,5 +14,6 @@ public interface ItemService extends SuperService {
 
     public List<ItemDTO> getSelectedItem(String Id);
     public int  getLastID()throws SQLException;
+    public int getQtyOnHand(int id)throws SQLException;
 
 }

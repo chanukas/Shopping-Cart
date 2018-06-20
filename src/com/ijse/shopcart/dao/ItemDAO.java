@@ -13,6 +13,7 @@ public interface ItemDAO extends SuperDAO{
     public List<ItemModel> showAllItem()throws SQLException;
 
     public List<ItemModel> getSelectedItems(String id)throws SQLException;
-    public int  getLastID()throws SQLException;
+    public int getLastID()throws SQLException;
+    public int getQtyOnHand(int id)throws SQLException;
 
 }

@@ -14,7 +14,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Shopping cart | v1</title>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -25,6 +25,7 @@
 <body>
 
 <div class="container">
+    <form action="">
     <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr>
@@ -70,9 +71,24 @@
 
             </td>
 
-            <td data-th="Price">LKR <%=split[2]%></td>
+            <td data-th="Price">LKR :<%=split[2]%></td>
+
+            <%
+
+                Integer qtyonhnad=null;
+
+                if(request.getAttribute("QtyOnHand")==null) {
+                    request.setAttribute("iAction", "QtyOnHndFromCart");
+                    request.setAttribute("id", cookie.getName());
+                    request.getRequestDispatcher("ItemController").forward(request, response);
+                }else {
+
+                     qtyonhnad= (Integer) request.getAttribute("QtyOnHand");
+                }
+
+            %>
             <td data-th="Quantity">
-                <input type="number" min = "0" id="qty<%=cookie.getName()%>" class="form-control text-center" onclick="addSubTotal<%=cookie.getName()%>()" value="<%=split[0]%>">
+                <input type="number" min = "0" max="<%=qtyonhnad%>"  readonly id="qty<%=cookie.getName()%>" class="form-control text-center" onclick="addSubTotal<%=cookie.getName()%>()" value="<%=split[0]%>">
             </td>
             <td data-th="Subtotal" class="text-center" id="subTotal<%=cookie.getName()%>">LKR :<%=Double.parseDouble(split[2])*Integer.parseInt(split[0])%></td>
             <td class="actions" data-th="">
@@ -82,6 +98,7 @@
         </tr>
 
         <script>
+
             $("#btnDelete<%=cookie.getName()%>").click(function () {
                 var total=$("#subTotal<%=cookie.getName()%>").html().split(":");
                 $('#itemTR<%=cookie.getName()%>').remove();
@@ -119,6 +136,7 @@
                }
 
             }
+
         </script>
 
         <%
@@ -134,13 +152,14 @@
         </tbody>
         <tfoot>
         <tr>
-            <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+            <td><a href="shopping-cart.jsp" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
             <td colspan="2" class="hidden-xs"></td>
             <td class="hidden-xs text-center" id="total"><strong>Total : <%=total%></strong></td>
-            <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+            <td><button type="submit" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></button></td>
         </tr>
         </tfoot>
     </table>
+    </form>
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

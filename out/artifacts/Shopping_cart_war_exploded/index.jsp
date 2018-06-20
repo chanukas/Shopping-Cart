@@ -26,8 +26,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
-
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 <body class="hold-transition login-page">
 
@@ -41,22 +40,18 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="home.jsp" method="post">
+      <form action="index.jsp" method="post">
         <div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="User Name">
+          <input type="text"  name="userName" class="form-control" placeholder="User Name">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" name="password" class="form-control" placeholder="Password">
           <span class="fa fa-lock form-control-feedback"></span>
         </div>
         <div class="row">
           <div class="col-8">
-            <div class="checkbox icheck">
-              <label>
-                <input type="checkbox"> Remember Me
-              </label>
-            </div>
+            <button href="" class="btn btn-success">Customer Login</button>
           </div>
           <!-- /.col -->
           <div class="col-4">
@@ -65,6 +60,20 @@
           <!-- /.col -->
         </div>
       </form>
+
+      <%
+
+        String userName=request.getParameter("userName");
+        String password=request.getParameter("password");
+        if(userName!=null && password!=null) {
+          if (userName.equals("admin") && password.equals("admin")) {
+            session.setAttribute("userName", request.getParameter("userName"));
+            response.sendRedirect("home.jsp");
+          } else {
+
+          }
+        }
+      %>
 
 
 

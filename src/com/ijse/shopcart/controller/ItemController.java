@@ -84,6 +84,18 @@ public class ItemController extends HttpServlet {
                 req.setAttribute("lastID",itemService.getLastID());
                 req.getRequestDispatcher("cart.jsp").forward(req,resp);
             }
+
+            if(req.getAttribute("iAction").equals("QtyOnHndFromCart")){
+               String itemid =(String) req.getAttribute("id");
+               req.setAttribute("QtyOnHand",itemService.getQtyOnHand(Integer.parseInt(itemid)));
+               req.getRequestDispatcher("cart.jsp").forward(req,resp);
+            }
+
+            if(req.getAttribute("iAction").equals("QtyOnHndFromShopCart")){
+                String itemid =(String) req.getAttribute("id");
+                req.setAttribute("QtyOnHand",itemService.getQtyOnHand(Integer.parseInt(itemid)));
+                req.getRequestDispatcher("shopping-cart.jsp").forward(req,resp);
+            }
         }
 
         if(req.getParameter("ItemCategory")!=null){

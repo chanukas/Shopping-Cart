@@ -92,4 +92,18 @@ public class ItemDAOImpl implements ItemDAO {
         return id;
 
     }
+
+    @Override
+    public int getQtyOnHand(int id)throws SQLException{
+        int qtyonhand=0;
+        try {
+            ResultSet resultSet = connection.createStatement().executeQuery("SELECT QTY_ON_HAND FROM item WHERE ID=" + id + "");
+            while (resultSet.next()){
+                qtyonhand=resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            throw e;
+        }
+        return qtyonhand;
+    }
 }

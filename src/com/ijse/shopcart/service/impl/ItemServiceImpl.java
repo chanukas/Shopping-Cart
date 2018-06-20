@@ -101,4 +101,15 @@ public class ItemServiceImpl implements ItemService {
         }
         return id;
     }
+
+    @Override
+    public int getQtyOnHand(int id) {
+        int curQty=0;
+        try {
+            curQty=itemDAO.getQtyOnHand(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return curQty;
+    }
 }

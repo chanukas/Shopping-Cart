@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 3</title>
+    <title>Shopping cart | v1</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,8 +29,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-
-
 
 <div class="wrapper">
     <!-- Sidebar Holder -->
@@ -84,7 +82,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" id="cartIcon" class="fas fa-shopping-cart" style="font-size: 30px"></a></li>
+                        <li><a href="cart.jsp" id="cartIcon" class="fas fa-shopping-cart" style="font-size: 30px"></a></li>
                     </ul>
                 </div>
             </div>
@@ -92,9 +90,7 @@
 
         <h2 class=" animated lightSpeedIn">NEW ARRIVALS</h2>
 
-
         <%
-
             if(request.getAttribute("ItemDTOs")==null) {
                 request.setAttribute("iAction", "ViewFromShopCart");
                 request.getRequestDispatcher("ItemController").forward(request, response);
@@ -110,22 +106,44 @@
                 <div class='panel-body' id="p-body<%=item.getId()%>">
                     QTY <label tempQTY="0" id="qty<%=item.getId()%>">0</label>
                 </div>
+                <input type="text" value="<%=item.getId()%>" id="itemid" hidden>
                 <input type="text" id="itemPrice<%=item.getId()%>" value="<%=item.getPrice()%>" hidden>
                 <div class='panel-heading'>LKR : <%=item.getPrice()%>
                     <button pid='<%=item.getId()%>' style='float:right;' id='<%=item.getId()%>' class='btn btn-danger btn-xs'>AddToCart</button>
                 </div>
             </div>
+
+            <input type="text" value="<%=item.getQtyonhand()%>" id="qtyonhand<%=item.getId()%>" hidden>
+
             <script>
                 $("#<%=item.getId()%>").click(function () {
                     var test=parseInt($("#qty<%=item.getId()%>").attr("tempQTY"));
-                    $("#qty<%=item.getId()%>").text(test+1);
-                    $("#qty<%=item.getId()%>").attr("tempQTY",test+1);
+                    console.log(test);
+                    var qtyonhand=parseInt($("#qtyonhand<%=item.getId()%>").val());
+                    if(test < qtyonhand ){
+                        $("#qty<%=item.getId()%>").text(test+1);
+                        $("#qty<%=item.getId()%>").attr("tempQTY",test+1);
 
-                    var d = new Date();
-                    d.setTime(d.getTime() + (7*24*60*60*1000));
-                    var expires = "expires="+ d.toUTCString();
-                    document.cookie = <%=item.getId()%> + "=" +(parseInt(test)+1).toString()+ "-"+ $("#productTitle<%=item.getId()%>").text()+ "-" +$("#itemPrice<%=item.getId()%>").val()+";"+expires+";path=/";
+                        var d = new Date();
+                        d.setTime(d.getTime() + (7*24*60*60*1000));
+                        var expires = "expires="+ d.toUTCString();
+                        document.cookie = <%=item.getId()%> + "=" +(parseInt(test)+1).toString()+ "-"+ $("#productTitle<%=item.getId()%>").text()+ "-" +$("#itemPrice<%=item.getId()%>").val()+";"+expires+";path=/";
+                    }
                 });
+
+                var cookiearray;
+                var pairArray;
+                cookiearray= document.cookie.split(';');
+                for (var i = 0; i < cookiearray.length; ++i) {
+                    pairArray = cookiearray[i].split('=');
+                    if(pairArray[1]!=undefined) {
+                        if(pairArray[0] == <%=item.getId()%>){
+                           var itemarray =pairArray[1].split("-");
+                           $("#qty<%=item.getId()%>").text(itemarray[0]);
+                            $("#qty<%=item.getId()%>").attr("tempQTY",itemarray[0]);
+                        }
+                    }
+                }
             </script>
 
         </div>
@@ -138,9 +156,6 @@
         %>
     </div>
 </div>
-
-
-
 
 
 <!-- jQuery CDN -->
@@ -157,8 +172,6 @@
             $(this).toggleClass('active');
         });
     });
-
-
 
 </script>
 </body>
