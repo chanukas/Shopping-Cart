@@ -3,16 +3,14 @@ package com.ijse.shopcart.controller;
 import com.ijse.shopcart.dto.CustomerDTO;
 import com.ijse.shopcart.service.ServiceFactory;
 import com.ijse.shopcart.service.impl.CustomerServiceImpl;
+import com.ijse.shopcart.util.PasswordEncryptor;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CustomerController extends HttpServlet {
 
@@ -29,8 +27,17 @@ public class CustomerController extends HttpServlet {
         CustomerServiceImpl customerService= (CustomerServiceImpl) ServiceFactory.getInstance().getService(ServiceFactory.ServiceTypes.CUSTOMER);
 
         if(cAction.equals("SaveCustomer")){
+
+            String source=req.getParameter("customerPassword");
+            String encryptpass=null;
+            try {
+                 encryptpass= new PasswordEncryptor().encrypt(source);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
             if(customerService.saveCustomer(new CustomerDTO(req.getParameter("customerName"),req.getParameter("customerMobile"),
-                    req.getParameter("customerUserName"),req.getParameter("customerPassword")))){
+                    req.getParameter("customerUserName"),encryptpass))){
 
                 out.println("<script type=\"text/javascript\">");
                 out.println("location='add-customer.jsp';");
@@ -60,7 +67,14 @@ public class CustomerController extends HttpServlet {
         }
 
         if(cAction.equals("Login")){
-            if(customerService.checkLogin(req.getParameter("username"),req.getParameter("pass"))){
+            String pass=req.getParameter("pass");
+            String encrypt = null;
+            try {
+                encrypt = new PasswordEncryptor().encrypt(pass);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            if(customerService.checkLogin(req.getParameter("username"),encrypt)){
                req.getSession().setAttribute("CustomerName",req.getParameter("username"));
                resp.sendRedirect("shopping-cart.jsp");
             }else{
