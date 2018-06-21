@@ -84,7 +84,7 @@ public class ItemController extends HttpServlet {
                     for (int j = 0; j < id+1; j++) {
                         if (cookie.getName().equals(j + "")) {
 
-                            String[] split = cookie.getValue().split("-");
+                            String[] split = cookie.getValue().split("/");
 
                             int itemid=(Integer.parseInt(cookie.getName()));
                             int curqty=(itemService.getQtyOnHand(Integer.parseInt(cookie.getName()))-Integer.parseInt(split[0]));

@@ -6,6 +6,10 @@
   Time: 12:42 PM
   To change this template use File | Settings | File Templates.
 --%>
+<% if(session.getAttribute("CustomerName")==null){
+    response.sendRedirect("customer-login.jsp");
+}else{
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -127,7 +131,7 @@
                         var d = new Date();
                         d.setTime(d.getTime() + (7*24*60*60*1000));
                         var expires = "expires="+ d.toUTCString();
-                        document.cookie = <%=item.getId()%> + "=" +(parseInt(test)+1).toString()+ "-"+ $("#productTitle<%=item.getId()%>").text()+ "-" +$("#itemPrice<%=item.getId()%>").val()+";"+expires+";path=/";
+                        document.cookie = <%=item.getId()%> + "=" +(parseInt(test)+1).toString()+ "/"+ $("#productTitle<%=item.getId()%>").text().split(' ').join('-')+ "/" +$("#itemPrice<%=item.getId()%>").val()+";"+expires+";path=/";
                     }
                 });
 
@@ -138,7 +142,7 @@
                     pairArray = cookiearray[i].split('=');
                     if(pairArray[1]!=undefined) {
                         if(pairArray[0] == <%=item.getId()%>){
-                           var itemarray =pairArray[1].split("-");
+                           var itemarray =pairArray[1].split("/");
                            $("#qty<%=item.getId()%>").text(itemarray[0]);
                             $("#qty<%=item.getId()%>").attr("tempQTY",itemarray[0]);
                         }
@@ -176,3 +180,4 @@
 </script>
 </body>
 </html>
+<%}%>

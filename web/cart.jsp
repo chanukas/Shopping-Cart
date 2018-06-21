@@ -5,6 +5,10 @@
   Time: 10:21 AM
   To change this template use File | Settings | File Templates.
 --%>
+<% if(session.getAttribute("CustomerName")==null){
+    response.sendRedirect("customer-login.jsp");
+}else{
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -55,10 +59,11 @@
                 if (cookies != null) {
                     for (int i = 0; i < cookies.length; i++) {
                         Cookie cookie = cookies[i];
-                        for (int j = 0; j <= id; j++) {
+                        for (int j = 0; j <= id+1; j++) {
                             if (cookie.getName().equals(j + "")) {
 
-                                String[] split = cookie.getValue().split("-");
+                                String[] split = cookie.getValue().split("/");
+
 
         %>
         <tr id="itemTR<%=cookie.getName()%>">
@@ -168,3 +173,4 @@
 
 </body>
 </html>
+<%}%>

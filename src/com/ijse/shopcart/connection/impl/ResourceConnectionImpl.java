@@ -1,7 +1,6 @@
 package com.ijse.shopcart.connection.impl;
 
 import com.ijse.shopcart.connection.ResourceConnection;
-import com.ijse.shopcart.constants.Constants;
 
 
 import java.io.File;
