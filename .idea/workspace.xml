@@ -1429,11 +1429,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="123" column="34" lean-forward="true" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -1456,14 +1456,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error-page.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="error-page.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/error-page.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="42" />
-              <folding>
-                <element signature="e#751#757#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-itemcategory.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/add-itemcategory.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -1578,13 +1584,13 @@
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/web/sidebar.jsp" />
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java" />
-        <option value="$PROJECT_DIR$/web/home.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/js/errorpage.js" />
         <option value="$PROJECT_DIR$/web/add-item.jsp" />
         <option value="$PROJECT_DIR$/web/test.html" />
         <option value="$PROJECT_DIR$/web/css/errorpage.css" />
         <option value="$PROJECT_DIR$/web/error-page.jsp" />
+        <option value="$PROJECT_DIR$/web/home.jsp" />
       </list>
     </option>
   </component>
@@ -1891,7 +1897,7 @@
       <workItem from="1529580373034" duration="183000" />
       <workItem from="1529580625577" duration="338000" />
       <workItem from="1529591861153" duration="5399000" />
-      <workItem from="1529600324754" duration="3698000" />
+      <workItem from="1529600324754" duration="4146000" />
     </task>
     <task id="LOCAL-00001" summary="add update">
       <created>1528985002481</created>
@@ -1956,15 +1962,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529563659355</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add error page">
+      <created>1529604966999</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1529604966999</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167628000" />
+    <option name="totallyTimeSpent" value="168076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -1984,10 +1996,10 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24422443" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24422443" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.19636963" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22112212" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -2016,7 +2028,8 @@
     <MESSAGE value="add db password Encryptor" />
     <MESSAGE value="add propertie file" />
     <MESSAGE value="add customer session" />
-    <option name="LAST_COMMIT_MESSAGE" value="add customer session" />
+    <MESSAGE value="add error page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add error page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/vendor/jquery/jquery-3.2.1.min.js">
@@ -2103,13 +2116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/add-itemcategory.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -2285,13 +2291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="123" column="34" lean-forward="true" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-26">
@@ -2337,13 +2336,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/add-itemcategory.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/error-page.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="e#751#757#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
         </state>
       </provider>
     </entry>
