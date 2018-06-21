@@ -7,12 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="015b8246-ae00-4136-8f4b-4dc265aa6f89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-Cart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-Cart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/dao/impl/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_cart_war_exploded/WEB-INF/classes/com/ijse/shopcart/dao/impl/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/dao/impl/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/dao/impl/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/connection/impl/ResourceConnectionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/connection/impl/ResourceConnectionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +56,7 @@
       <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/cart.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="1003">
               <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
@@ -66,7 +65,7 @@
       <file leaf-file-name="add-customer.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/add-customer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-295">
+            <state relative-caret-position="952">
               <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
             </state>
           </provider>
@@ -75,44 +74,17 @@
       <file leaf-file-name="ItemController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="1343">
               <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="110" column="69" selection-start-line="110" selection-start-column="69" selection-end-line="110" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/ItemService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
+            <state relative-caret-position="226">
+              <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,14 +92,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PasswordEncryptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/util/PasswordEncryptor.java">
+      <file leaf-file-name="ResourceConnectionImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/connection/impl/ResourceConnectionImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="104">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Settings/settings.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/constants/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Settings/settings.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopping-cart.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/shopping-cart.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1224">
+              <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -157,9 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/web/update-customer.jsp" />
-        <option value="$PROJECT_DIR$/web/aaa.jsp" />
-        <option value="$PROJECT_DIR$/web/update-customer.jsp" />
         <option value="$PROJECT_DIR$/web/update-item.jsp" />
         <option value="$PROJECT_DIR$/web/sidebar.jsp" />
         <option value="$PROJECT_DIR$/web/css/login.scss" />
@@ -196,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/web/customer-login.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java" />
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java" />
@@ -208,6 +214,10 @@
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/util/EncryptDecrypt.java" />
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/util/PasswordEncryptor.java" />
         <option value="$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/connection/impl/DBConnection.java" />
+        <option value="$PROJECT_DIR$/Settings/settings.properties" />
+        <option value="$PROJECT_DIR$/src/com/ijse/shopcart/connection/impl/ResourceConnectionImpl.java" />
       </list>
     </option>
   </component>
@@ -248,8 +258,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,6 +269,11 @@
             <path>
               <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
+              <item name="Settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,18 +287,40 @@
               <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shopcart" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shopcart" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shopcart" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="Settings" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,7 +329,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/commons-codec-1.9.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -326,6 +362,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Shopping Cart">
+    <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ijse.shopcart.connection.impl.DBConnection" />
+      <module name="Shopping-Cart" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ijse.shopcart.connection.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="PasswordEncryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ijse.shopcart.util.PasswordEncryptor" />
       <module name="Shopping-Cart" />
@@ -563,59 +610,21 @@
         </option>
       </method>
     </configuration>
-    <configuration name="test.html (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.88" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/test.html" />
-      <deployment>
-        <artifact name="Shopping-Cart:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="test_html_(1)_Shopping-Cart" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Shopping-Cart:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Tomcat Server.Shopping Cart" />
-      <item itemvalue="Tomcat Server.test.html (1)" />
       <item itemvalue="Tomcat Server.shop-cart.jsp" />
       <item itemvalue="Tomcat Server.shop-cart.jsp (1)" />
       <item itemvalue="Tomcat Server.shop-cart.jsp (2)" />
       <item itemvalue="Application.PasswordEncryptor" />
+      <item itemvalue="Application.DBConnection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DBConnection" />
         <item itemvalue="Application.PasswordEncryptor" />
         <item itemvalue="Tomcat Server.shop-cart.jsp (2)" />
         <item itemvalue="Tomcat Server.shop-cart.jsp (1)" />
         <item itemvalue="Tomcat Server.shop-cart.jsp" />
-        <item itemvalue="Tomcat Server.test.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -642,7 +651,9 @@
       <workItem from="1529379501477" duration="8414000" />
       <workItem from="1529394590021" duration="11375000" />
       <workItem from="1529465022134" duration="25780000" />
-      <workItem from="1529502219678" duration="9743000" />
+      <workItem from="1529502219678" duration="10029000" />
+      <workItem from="1529516164617" duration="133000" />
+      <workItem from="1529552411505" duration="2194000" />
     </task>
     <task id="LOCAL-00001" summary="add update">
       <created>1528985002481</created>
@@ -686,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529510553032</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add db password Encryptor">
+      <created>1529514011353</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1529514011353</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140974000" />
+    <option name="totallyTimeSpent" value="143587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -715,9 +733,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45379537" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39273927" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22112212" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1785174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18305598" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -743,20 +761,10 @@
     <MESSAGE value="add customer login" />
     <MESSAGE value="add database update" />
     <MESSAGE value="add db script" />
-    <option name="LAST_COMMIT_MESSAGE" value="add db script" />
+    <MESSAGE value="add db password Encryptor" />
+    <option name="LAST_COMMIT_MESSAGE" value="add db password Encryptor" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/web/update-customer.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/update-customer.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/update-item.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/sidebar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/login.js" />
     <entry file="file://$PROJECT_DIR$/web/css/login.scss" />
     <entry file="file://$PROJECT_DIR$/web/testL.jsp" />
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/model/ItemModel.java">
@@ -820,13 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/shopping-cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="165" column="40" lean-forward="true" selection-start-line="165" selection-start-column="40" selection-end-line="165" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -937,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1059">
-          <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/ItemDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -953,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/ItemDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="1734">
           <caret line="110" column="69" selection-start-line="110" selection-start-column="69" selection-end-line="110" selection-end-column="69" />
         </state>
       </provider>
@@ -967,56 +961,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/service/impl/ItemServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="1887">
           <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="1003">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/ItemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="1343">
           <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/add-customer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
+        <state relative-caret-position="952">
           <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/connection/ResourceConnection.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/util/EncryptDecrypt.class" />
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/dao/impl/CustomerDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#320#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1377">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Shopping-Cart/com/ijse/shopcart/util/EncryptDecrypt.class">
+    <entry file="file://$PROJECT_DIR$/web/shopping-cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#2077#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1224">
+          <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/util/PasswordEncryptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="342">
+          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1025,11 +1017,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
+        <state relative-caret-position="226">
+          <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/connection/impl/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Settings/settings.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Settings/settings.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ijse/shopcart/connection/impl/ResourceConnectionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

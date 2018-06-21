@@ -4,9 +4,14 @@ import com.ijse.shopcart.connection.ResourceConnection;
 import com.ijse.shopcart.constants.Constants;
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class ResourceConnectionImpl implements ResourceConnection {
 
@@ -15,12 +20,29 @@ public class ResourceConnectionImpl implements ResourceConnection {
 
     private  ResourceConnectionImpl()throws ClassNotFoundException,SQLException{
         try {
-            Class.forName(Constants.DRIVER);
-            connection=DriverManager.getConnection(Constants.DB_URL+Constants.DB_NAME,Constants.USERNAME,Constants.PASSWORD);
+
+            Properties dbProperties = new Properties();
+            File dbFile = new File("../settings/settings.properties");
+            FileReader dbReader = new FileReader(dbFile);
+            dbProperties.load(dbReader);
+
+            String DB_URL = dbProperties.getProperty("DB_URL");
+            String DB_NAME = dbProperties.getProperty("DB_NAME");
+            String USERNAME = dbProperties.getProperty("USERNAME");
+            String PASSWORD = dbProperties.getProperty("PASSWORD");
+            String DRIVER = dbProperties.getProperty("DRIVER");
+
+
+            Class.forName(DRIVER);
+            connection=DriverManager.getConnection(DB_URL+DB_NAME,USERNAME,PASSWORD);
         } catch (ClassNotFoundException e) {
             throw  e;
         } catch (SQLException e) {
             throw e;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

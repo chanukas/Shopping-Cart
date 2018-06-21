@@ -73,13 +73,11 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public boolean checkLogin(String username, String password)throws SQLException {
-        System.out.println(username+">>>"+password);
         boolean result=false;
         ResultSet resultSet = null;
         try {
             resultSet = connection.createStatement().executeQuery("SELECT * FROM customer WHERE USER_NAME='" + username + "' AND PASSWORD='" + password + "'");
             while (resultSet.next()){
-                System.out.println("true");
                 result= true;
             }
 
