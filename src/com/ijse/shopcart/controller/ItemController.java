@@ -116,6 +116,12 @@ public class ItemController extends HttpServlet {
                 req.getRequestDispatcher("view-all-item.jsp").forward(req,resp);
             }
 
+            if(req.getAttribute("iAction").equals("ItemCount")){
+                List<ItemDTO> itemDTOS = itemService.viewAllItem();
+                req.setAttribute("itemCount",itemDTOS.size());
+                req.getRequestDispatcher("home.jsp").forward(req,resp);
+            }
+
             if(req.getAttribute("iAction").equals("ViewFromShopCart")){
                 req.setAttribute("ItemDTOs",itemService.viewAllItem());
                 req.getRequestDispatcher("shopping-cart.jsp").forward(req,resp);

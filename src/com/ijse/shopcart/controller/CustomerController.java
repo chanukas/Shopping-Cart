@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 public class CustomerController extends HttpServlet {
 
@@ -89,6 +90,14 @@ public class CustomerController extends HttpServlet {
             if (req.getAttribute("cAction").equals("ViewAllCustomer")) {
                 req.setAttribute("customerDTOS", customerService.viewAllCustomer());
                 req.getRequestDispatcher("view-all-customer.jsp").forward(req, resp);
+            }
+        }
+
+        if(req.getAttribute("cAction")!=null) {
+            if (req.getAttribute("cAction").equals("CustomerCount")) {
+                List<CustomerDTO> customerDTOS = customerService.viewAllCustomer();
+                req.setAttribute("customerCount", customerDTOS.size());
+                req.getRequestDispatcher("home.jsp").forward(req, resp);
             }
         }
 

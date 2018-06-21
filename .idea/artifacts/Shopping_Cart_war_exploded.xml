@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Shopping-Cart:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Shopping_Cart_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Shopping-Cart" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql-connector-java" />
+          <element id="library" level="project" name="commons-fileupload-1.3" />
+          <element id="library" level="project" name="commons-codec-1.9" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Shopping-Cart/web/Web" />
+    </root>
+  </artifact>
+</component>
