@@ -14,6 +14,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">

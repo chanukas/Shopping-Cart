@@ -16,6 +16,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Shopping cart | v1</title>
