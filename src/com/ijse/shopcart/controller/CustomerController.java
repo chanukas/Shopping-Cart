@@ -5,6 +5,7 @@ import com.ijse.shopcart.service.ServiceFactory;
 import com.ijse.shopcart.service.impl.CustomerServiceImpl;
 import com.ijse.shopcart.util.PasswordEncryptor;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

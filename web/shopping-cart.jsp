@@ -87,7 +87,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="cart.jsp?ssd=sds" id="cartIcon" class="fas fa-shopping-cart" style="font-size: 30px"></a></li>
+                        <li><a href="cart.jsp" id="cartIcon" class="fas fa-shopping-cart" style="font-size: 30px"></a></li>
                     </ul>
                 </div>
             </div>
@@ -123,7 +123,6 @@
             <script>
                 $("#<%=item.getId()%>").click(function () {
                     var test=parseInt($("#qty<%=item.getId()%>").attr("tempQTY"));
-                    console.log(test);
                     var qtyonhand=parseInt($("#qtyonhand<%=item.getId()%>").val());
                     if(test < qtyonhand ){
                         $("#qty<%=item.getId()%>").text(test+1);
@@ -132,7 +131,7 @@
                         var d = new Date();
                         d.setTime(d.getTime() + (7*24*60*60*1000));
                         var expires = "expires="+ d.toUTCString();
-                        document.cookie = <%=item.getId()%> + "=" +(parseInt(test)+1).toString()+ "/"+ $("#productTitle<%=item.getId()%>").text().split(' ').join('-')+ "/" +$("#itemPrice<%=item.getId()%>").val()+";"+expires+";path=/";
+                        document.cookie = <%=item.getId()%> + "=" +(parseInt(test)+1).toString()+ "/"+ $("#productTitle<%=item.getId()%>").text().split(' ').join('-')+ "/" +$("#itemPrice<%=item.getId()%>").val()+"/"+'<%=session.getAttribute("CustomerName").toString()%>'+";"+expires+";path=/";
                     }
                 });
 
@@ -144,8 +143,11 @@
                     if(pairArray[1]!=undefined) {
                         if(pairArray[0] == <%=item.getId()%>){
                            var itemarray =pairArray[1].split("/");
-                           $("#qty<%=item.getId()%>").text(itemarray[0]);
-                            $("#qty<%=item.getId()%>").attr("tempQTY",itemarray[0]);
+                           console.log(itemarray[3]);
+                           if(itemarray[3] == '<%=session.getAttribute("CustomerName")%>') {
+                               $("#qty<%=item.getId()%>").text(itemarray[0]);
+                               $("#qty<%=item.getId()%>").attr("tempQTY", itemarray[0]);
+                           }
                         }
                     }
                 }

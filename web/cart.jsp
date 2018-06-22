@@ -6,10 +6,10 @@
   Time: 10:21 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%--<% if(session.getAttribute("CustomerName")==null){--%>
-    <%--response.sendRedirect("customer-login.jsp");--%>
-<%--}else{--%>
-<%--%>--%>
+<% if(session.getAttribute("CustomerName")==null){
+    response.sendRedirect("customer-login.jsp");
+}else{
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -47,6 +47,7 @@
         <%
 
             double total=0;
+            double subtotal=0;
 
             if(request.getAttribute("lastID")==null) {
                 request.setAttribute("iAction", "LastIDFromCart");
@@ -64,6 +65,8 @@
                             if (cookie.getName().equals(j + "")) {
 
                                 String[] split = cookie.getValue().split("/");
+
+                                if(split[3].equals(session.getAttribute("CustomerName"))){
 
 
         %>
@@ -95,12 +98,13 @@
 
                 ItemServiceImpl itemService= (ItemServiceImpl) ServiceFactory.getInstance().getService(ServiceFactory.ServiceTypes.ITEM);
                 qtyonhnad=itemService.getQtyOnHand(Integer.parseInt(cookie.getName()));
+                subtotal=Integer.parseInt(split[0])*Double.parseDouble(split[2]);
 
             %>
             <td data-th="Quantity">
                 <input type="number" min = "0" max="<%=qtyonhnad%>"  readonly id="qty<%=cookie.getName()%>" class="form-control text-center" onclick="addSubTotal<%=cookie.getName()%>()" value="<%=split[0]%>">
             </td>
-            <td data-th="Subtotal" class="text-center" id="subTotal<%=cookie.getName()%>">LKR :<%=Integer.parseInt(split[0])*Double.parseDouble(split[2])%></td>
+            <td data-th="Subtotal" class="text-center" id="subTotal<%=cookie.getName()%>">LKR :<%=subtotal%></td>
             <td class="actions" data-th="">
                 <button class="btn btn-danger btn-sm" type="button" id="btnDelete<%=cookie.getName()%>"><i class="fa fa-trash-o"></i></button>
             </td>
@@ -150,13 +154,14 @@
         </script>
 
         <%
-                                total+=Double.parseDouble(split[2]);
-
+                                total+=subtotal;
+                                }
                             }
                         }
                    }
                 }
             }
+
         %>
 
         </tbody>
@@ -177,4 +182,4 @@
 
 </body>
 </html>
-<%--<%}%>--%>
+<%}%>
