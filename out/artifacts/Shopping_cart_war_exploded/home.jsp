@@ -111,7 +111,7 @@
                     <div class="inner">
                         <h3><%=itemCount%></h3>
 
-                        <p>All Items</p>
+                        <p>Total Items</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
@@ -126,7 +126,7 @@
                     <div class="inner">
                         <h3><%=customerCount%></h3>
 
-                        <p>All Customers</p>
+                        <p>Total Customers</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>

@@ -1,30 +1,31 @@
-<%--
+<%@ page import="com.ijse.shopcart.service.ServiceFactory" %>
+<%@ page import="com.ijse.shopcart.service.impl.ItemServiceImpl" %><%--
   Created by IntelliJ IDEA.
   User: Chanuka Sandaruwan
   Date: 2018-06-19
   Time: 10:21 AM
   To change this template use File | Settings | File Templates.
 --%>
-<% if(session.getAttribute("CustomerName")==null){
-    response.sendRedirect("customer-login.jsp");
-}else{
-%>
+<%--<% if(session.getAttribute("CustomerName")==null){--%>
+    <%--response.sendRedirect("customer-login.jsp");--%>
+<%--}else{--%>
+<%--%>--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Shopping cart | v1</title>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <script src="js/jquery.min.js"></script>
 
 </head>
 <body>
@@ -55,7 +56,6 @@
 
 
                 Cookie[] cookies = request.getCookies();
-                String otpCookie = null;
 
                 if (cookies != null) {
                     for (int i = 0; i < cookies.length; i++) {
@@ -82,22 +82,25 @@
 
             <%
 
-                Integer qtyonhnad=null;
+                Integer qtyonhnad=0;
 
-                if(request.getAttribute("QtyOnHand")==null) {
-                    request.setAttribute("iAction", "QtyOnHndFromCart");
-                    request.setAttribute("id", cookie.getName());
-                    request.getRequestDispatcher("ItemController").forward(request, response);
-                }else {
+//                if(request.getAttribute("QtyOnHand")==null) {
+//                    request.setAttribute("iAction", "QtyOnHndFromCart");
+//                    request.setAttribute("id", cookie.getName());
+//                    request.getRequestDispatcher("ItemController").forward(request, response);
+//                }else {
+//
+//                     qtyonhnad= (Integer) request.getAttribute("QtyOnHand");
+//                }
 
-                     qtyonhnad= (Integer) request.getAttribute("QtyOnHand");
-                }
+                ItemServiceImpl itemService= (ItemServiceImpl) ServiceFactory.getInstance().getService(ServiceFactory.ServiceTypes.ITEM);
+                qtyonhnad=itemService.getQtyOnHand(Integer.parseInt(cookie.getName()));
 
             %>
             <td data-th="Quantity">
                 <input type="number" min = "0" max="<%=qtyonhnad%>"  readonly id="qty<%=cookie.getName()%>" class="form-control text-center" onclick="addSubTotal<%=cookie.getName()%>()" value="<%=split[0]%>">
             </td>
-            <td data-th="Subtotal" class="text-center" id="subTotal<%=cookie.getName()%>">LKR :<%=Double.parseDouble(split[2])*Integer.parseInt(split[0])%></td>
+            <td data-th="Subtotal" class="text-center" id="subTotal<%=cookie.getName()%>">LKR :<%=Integer.parseInt(split[0])*Double.parseDouble(split[2])%></td>
             <td class="actions" data-th="">
                 <button class="btn btn-danger btn-sm" type="button" id="btnDelete<%=cookie.getName()%>"><i class="fa fa-trash-o"></i></button>
             </td>
@@ -170,8 +173,8 @@
     </form>
 </div>
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
 
 </body>
 </html>
-<%}%>
+<%--<%}%>--%>

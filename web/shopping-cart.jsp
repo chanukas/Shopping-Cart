@@ -87,7 +87,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="cart.jsp" id="cartIcon" class="fas fa-shopping-cart" style="font-size: 30px"></a></li>
+                        <li><a href="cart.jsp?ssd=sds" id="cartIcon" class="fas fa-shopping-cart" style="font-size: 30px"></a></li>
                     </ul>
                 </div>
             </div>
