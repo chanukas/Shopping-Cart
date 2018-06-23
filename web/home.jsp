@@ -5,7 +5,11 @@
   Time: 11:03 AM
   To change this template use File | Settings | File Templates.
 --%>
-<% if(session.getAttribute("userName")==null) response.sendRedirect("index.jsp");%>
+<% if(session.getAttribute("userName")==null){
+    response.sendRedirect("index.jsp");
+}else{
+
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -170,4 +174,4 @@
 
 </body>
 </html>
-
+<%}%>

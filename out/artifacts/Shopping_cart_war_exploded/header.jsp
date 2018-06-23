@@ -21,4 +21,15 @@
             <span class="sr-only">Toggle navigation</span>
         </a>
 
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <!-- Messages: style can be found in dropdown.less-->
+
+                <!-- Control Sidebar Toggle Button -->
+                <li>
+                    <a href="CustomerController?cAction=AdminLogout" >Logout <i class="fa fa-power-off"></i></a>
+                </li>
+            </ul>
+        </div>
+
     </nav>

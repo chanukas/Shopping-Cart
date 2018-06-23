@@ -29,6 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -61,6 +62,8 @@
             </li>
 
 
+
+
         <%
                 }
             }
@@ -86,6 +89,9 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="CustomerController?cAction=customerLogout" class="fa fa-sign-out-alt" style="font-size: 33px;"></a></li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="cart.jsp" id="cartIcon" class="fas fa-shopping-cart" style="font-size: 30px"></a></li>
                     </ul>

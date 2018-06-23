@@ -87,6 +87,17 @@ public class CustomerController extends HttpServlet {
             }
         }
 
+        if(cAction.equals("AdminLogout")){
+            req.getSession().setAttribute("userName",null);
+            resp.sendRedirect("index.jsp");
+        }
+
+        if(cAction.equals("customerLogout")){
+            req.getSession().setAttribute("CustomerName",null);
+            resp.sendRedirect("customer-login.jsp");
+        }
+
+
         if(req.getAttribute("cAction")!=null) {
             if (req.getAttribute("cAction").equals("ViewAllCustomer")) {
                 req.setAttribute("customerDTOS", customerService.viewAllCustomer());
